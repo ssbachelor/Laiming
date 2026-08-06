@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-cream: #F5F0E6;
+    --color-cream-card: #EFE9DD;
+    --color-cream-hover: #E4DCCB;
+    --color-black: #0A0A0A;
+    --color-black-card: #141414;
+    --color-gold: #B08D57;
+    --color-gold-light: #C6A46A;
+    --color-gold-muted: rgba(176, 141, 87, 0.15);
+  }
+
+  body {
+    font-family: 'Inter', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--color-cream);
+    color: var(--color-black);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Utilities for Artistic Flair Theme */
+.hairline {
+  border: 0.5px solid rgba(10, 10, 10, 0.15);
+}
+
+.hairline-dark {
+  border: 0.5px solid rgba(255, 255, 255, 0.12);
+}
+
+.tracking-widest-plus {
+  letter-spacing: 0.18em;
+}
+
+.leading-tight-plus {
+  line-height: 0.92;
+}
+
+.text-gold {
+  color: #B08D57;
+}
+
+.bg-gold {
+  background-color: #B08D57;
+}
+
+.border-gold {
+  border-color: #B08D57;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #B08D57;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C6A46A;
+}
+
